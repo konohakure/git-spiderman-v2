@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(32, 32, 32);
+    margin: 10px 5px;
+}
+.item1{
+    grid-area: inicio;
+    background-color: #aa0000;
+    border-radius: 10px;
+    margin: 5px;
+}
+.item2{
+    grid-area: quien;
+    background-color: #aa0000;
+    border-radius: 10px;
+    margin: 5px;
+}
+.item3{
+    grid-area: galeria;
+    background-color: #aa0000;
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+}
+.item4{
+    grid-area: contacto;
+    background-color: #aa0000;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.grid-layout{
+    display: grid;
+    grid-template-areas:
+    'inicio inicio inicio quien galeria contacto'
+    ;
+    background-image: url("https://images5.alphacoders.com/129/1297306.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.grid-layout > div {
+    text-align: center;
+    padding: 20px 0;
+    font-family: cursive;
+    font-size: 15px;
+}
+.grid-layout > div > a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* cuerpo de la pagina */
+
+.item5{
+    grid-area: portada;
+    margin: 5px;
+}
+
+.item6{
+    grid-area: bio1;
+    margin: 0 5px;
+}
+.item7{
+    grid-area: bio2;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    margin: 0 5px; 
+    padding: 50px 50px; 
+}
+.item8{
+    grid-area: video1;
+    margin: 0 5px;
+}
+.item9{
+    grid-area: video2;
+    margin: 0 5px;
+}
+.item10{
+    grid-area: video3;
+    margin: 0 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'portada portada portada portada portada portada'
+    'bio1 bio1 bio2 bio2 bio2 bio2'
+    'video1 video1 video2 video2 video3 video3'
+    ;
+    background-image: url("https://images5.alphacoders.com/129/1297306.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    justify-content: center;
+}
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-family: cursive;
+    font-size: 15px;
+}
+
+.grid-container > div > p {
+    color: white;
+    font-size: medium;
+    text-align: center;
+    font-family: cursive;
+}
+
+img{
+    border-radius: 10px;
+}
+
+/* footer */
+
+.reds1{
+    grid-area: reds1;
+}
+.reds2{
+    grid-area: reds2;
+}
+.reds3{
+    grid-area: reds3;
+}
+.item11{
+    grid-area: der;
+}
+
+.footer {
+    display: grid;
+    grid-template-areas: 
+    'reds1 reds2 reds3 reds3 reds3 reds3'
+    'der der der der der der'
+    ;
+    background-image: url("https://images5.alphacoders.com/129/1297306.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.footer{
+    color: aliceblue;
+    font-family: cursive;
+}
